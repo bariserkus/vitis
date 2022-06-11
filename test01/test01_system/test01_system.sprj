@@ -18,6 +18,11 @@
       <applications name="test01_kernels" domainName="" domainPrettyName="pl" appBuildConfig="Emulation-HW"/>
       <applications name="test01" domainName="xrt" domainPrettyName="xrt" appBuildConfig="Emulation-HW"/>
     </configBuildOptions>
+    <lastBuildOptions xsi:type="systemproject:SystemOptions" target="hw_emu">
+      <applications name="test01_system_hw_link" domainName="" domainPrettyName="pl" appBuildConfig="Emulation-HW"/>
+      <applications name="test01_kernels" domainName="" domainPrettyName="pl" appBuildConfig="Emulation-HW"/>
+      <applications name="test01" domainName="xrt" domainPrettyName="xrt" appBuildConfig="Emulation-HW"/>
+    </lastBuildOptions>
   </configuration>
   <configuration name="Hardware" id="com.xilinx.sdx.system.managedbuilder.hw.configuration.1686169788">
     <configBuildOptions xsi:type="systemproject:SystemOptions" target="hw">
