@@ -6,6 +6,11 @@
       <applications name="test01_kernels" domainName="" domainPrettyName="pl" appBuildConfig="Emulation-SW"/>
       <applications name="test01" domainName="xrt" domainPrettyName="xrt" appBuildConfig="Emulation-SW"/>
     </configBuildOptions>
+    <lastBuildOptions xsi:type="systemproject:SystemOptions">
+      <applications name="test01_system_hw_link" domainName="" domainPrettyName="pl" appBuildConfig="Emulation-SW"/>
+      <applications name="test01_kernels" domainName="" domainPrettyName="pl" appBuildConfig="Emulation-SW"/>
+      <applications name="test01" domainName="xrt" domainPrettyName="xrt" appBuildConfig="Emulation-SW"/>
+    </lastBuildOptions>
   </configuration>
   <configuration name="Emulation-HW" id="com.xilinx.sdx.system.managedbuilder.hwemu.configuration.1147136623">
     <configBuildOptions xsi:type="systemproject:SystemOptions" target="hw_emu">

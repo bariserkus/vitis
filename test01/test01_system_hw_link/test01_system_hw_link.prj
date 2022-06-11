@@ -4,16 +4,38 @@
     <configBuildOptions xsi:type="hwlink:LinkOptions">
       <binaryContainers name="binary_container_1">
         <kernels name="krnl_vadd" projectName="test01_kernels">
-          <computeUnits name="krnl_vadd_1" slr=""/>
+          <computeUnits name="krnl_vadd_1" slr="">
+            <args name="in1" master="true" memory=""/>
+            <args name="in2" master="true" memory=""/>
+            <args name="out" master="true" memory=""/>
+            <args name="size"/>
+          </computeUnits>
         </kernels>
       </binaryContainers>
     </configBuildOptions>
+    <lastBuildOptions xsi:type="hwlink:LinkOptions">
+      <binaryContainers name="binary_container_1">
+        <kernels name="krnl_vadd" projectName="test01_kernels">
+          <computeUnits name="krnl_vadd_1" slr="">
+            <args name="in1" master="true" memory=""/>
+            <args name="in2" master="true" memory=""/>
+            <args name="out" master="true" memory=""/>
+            <args name="size"/>
+          </computeUnits>
+        </kernels>
+      </binaryContainers>
+    </lastBuildOptions>
   </configuration>
   <configuration name="Emulation-HW" id="com.xilinx.ide.accel.config.hwlink.hw_emu.1800464764">
     <configBuildOptions xsi:type="hwlink:LinkOptions" target="hw_emu">
       <binaryContainers name="binary_container_1">
         <kernels name="krnl_vadd" projectName="test01_kernels">
-          <computeUnits name="krnl_vadd_1" slr=""/>
+          <computeUnits name="krnl_vadd_1" slr="">
+            <args name="in1" master="true" memory=""/>
+            <args name="in2" master="true" memory=""/>
+            <args name="out" master="true" memory=""/>
+            <args name="size"/>
+          </computeUnits>
         </kernels>
       </binaryContainers>
     </configBuildOptions>
@@ -22,7 +44,12 @@
     <configBuildOptions xsi:type="hwlink:LinkOptions" target="hw">
       <binaryContainers name="binary_container_1">
         <kernels name="krnl_vadd" projectName="test01_kernels">
-          <computeUnits name="krnl_vadd_1" slr=""/>
+          <computeUnits name="krnl_vadd_1" slr="">
+            <args name="in1" master="true" memory=""/>
+            <args name="in2" master="true" memory=""/>
+            <args name="out" master="true" memory=""/>
+            <args name="size"/>
+          </computeUnits>
         </kernels>
       </binaryContainers>
     </configBuildOptions>
