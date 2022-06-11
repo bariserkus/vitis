@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ASCII"?>
+<hwlink:HwLinkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:hwlink="http://www.xilinx.com/acceleration/hwlink" name="test01_system_hw_link" platform="/xilinx/Vitis/2022.1/base_platforms/xilinx_zcu102_base_202210_1/xilinx_zcu102_base_202210_1.xpfm" systemProject="test01_system" cpu="pl">
+  <configuration name="Emulation-SW" id="com.xilinx.ide.accel.config.hwlink.sw_emu.420593007">
+    <configBuildOptions xsi:type="hwlink:LinkOptions">
+      <binaryContainers name="binary_container_1">
+        <kernels name="krnl_vadd" projectName="test01_kernels">
+          <computeUnits name="krnl_vadd_1" slr=""/>
+        </kernels>
+      </binaryContainers>
+    </configBuildOptions>
+  </configuration>
+  <configuration name="Emulation-HW" id="com.xilinx.ide.accel.config.hwlink.hw_emu.1800464764">
+    <configBuildOptions xsi:type="hwlink:LinkOptions" target="hw_emu">
+      <binaryContainers name="binary_container_1">
+        <kernels name="krnl_vadd" projectName="test01_kernels">
+          <computeUnits name="krnl_vadd_1" slr=""/>
+        </kernels>
+      </binaryContainers>
+    </configBuildOptions>
+  </configuration>
+  <configuration name="Hardware" id="com.xilinx.ide.accel.config.hwlink.hw.1854155906">
+    <configBuildOptions xsi:type="hwlink:LinkOptions" target="hw">
+      <binaryContainers name="binary_container_1">
+        <kernels name="krnl_vadd" projectName="test01_kernels">
+          <computeUnits name="krnl_vadd_1" slr=""/>
+        </kernels>
+      </binaryContainers>
+    </configBuildOptions>
+  </configuration>
+</hwlink:HwLinkProject>
