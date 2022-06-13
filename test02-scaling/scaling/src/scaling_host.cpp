@@ -9,7 +9,7 @@
 #define CL_HPP_MINIMUM_OPENCL_VERSION 120
 #define CL_HPP_ENABLE_PROGRAM_CONSTRUCTION_FROM_ARRAY_COMPATIBILITY 1
 
-#include <CL/opencl.hpp>
+#include <CL/cl2.hpp>
 
 
 #include <sys/time.h>
@@ -31,7 +31,7 @@ double hardware_time;
 int main(int argc, char* argv[]) {
 
 
-	unsigned int n =   (1024*1024);
+	unsigned int n = 128; //(1024*1024);
     if(argc != 2) {
 		std::cout << "Usage: " << argv[0] <<" <xclbin>" << std::endl;
 		return EXIT_FAILURE;
